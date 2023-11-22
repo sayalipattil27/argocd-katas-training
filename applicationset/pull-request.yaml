@@ -8,7 +8,7 @@ spec:
   - pullRequest:
       github:
         # The GitHub organization or user.
-        owner: sayalipattil27 #e.g. eficode-academy
+        owner: sayalipattil27
         # The Github repository
         repo: argocd-katas-training #e.g. argocd-katas
 
