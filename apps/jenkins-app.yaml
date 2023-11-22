@@ -1,0 +1,18 @@
+project: default
+source:
+  repoURL: 'https://charts.bitnami.com/bitnami'
+  targetRevision: 12.4.0
+  helm:
+    parameters:
+      - name: service.type
+        value: NodePort
+      - name: persistence.enabled
+        value: 'false'
+      - name: jenkinsPassword
+        value: student
+  chart: jenkins
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: student-9
+syncPolicy:
+  automated: {}
